@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Mutable Immutable Muhabbeti!
 ---
 
 Not: 28/02/2010 tarihinde daha önce kendi blogumda yazmış olduğum yazıdır.
