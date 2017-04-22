@@ -7,7 +7,7 @@ Not: 28/02/2010 tarihinde daha önce kendi blogumda yazmış olduğum yazıdır.
 
 Oldukça önemli bir kavram olan Değişmezlik kavramı ile ilgili bir iki şey de ben yazayım diyorum. Oldukça basit bir mantığa sahip olmasına rağmen, maalesef kod yazarken çok fazla dikkat etmediğimiz için başımıza bela açabilen bir kavram. Java dilinde birçok önemli sınıf Immutable olarak tasarlanmışken (String, Integer gibi) bazıları ise mutable yani değişebilir olarak tasarlanmış (Date sınıfı).
 
-##Immutable Nesneler
+## Immutable Nesneler
 Eminim aşağıdaki senaryo, hemen herkesin başına gelmiştir. Elinizdeki bir yazıyı büyük harfe çevirmek istediğimizi varsayalım. Bu durumda şöyle bir kod yazmış olabiliriz.
 
 ```java
@@ -31,7 +31,7 @@ Olayı şöyle özetleyelim: String sınıfı bir Immutable sınıf olduğundan,
 -Clone, copy constructor gibi tekniklere ihtiyaç kalmaz
 -Değişmeyecekleri için Map, Set gibi veri yapılarında anahtar (key) olarak kullanılabilirler.
 
-##StringBuffer StringBuilder
+## StringBuffer StringBuilder
 Tecrübeli insanların bangır bangır StringBuffer kullanın demesi de aslında Stringlerin immutable olması ile ilgili. Ne alaka diyenlere hemen bir örnek verelim:
 
 ```java
@@ -61,7 +61,7 @@ Yukarıda bahsedilen problemi ise StringBuffer ya da StringBuilder kullanarak ç
 
 Aradaki farkı anlamak için Java VisualVM (jvisualvm) programını deneyebilirsiniz. Bu program, JDK ile birlikte kurulmaktadır ve o an sistemde çalışan Java uygulamaları ile ilgili çeşitli bilgiler sunar. Örneğin uygulamanın ne kadar bellek tükettiğini, işlemciyi ne kadar zorladığını ya da hangi sınıfların ne kadar kullanıldığını bu program ile öğrenebilirsiniz.
 
-##Mutable Neseneler
+## Mutable Neseneler
 Mutable nesneler ise yine hataya sebep olabilecek en önemli sebeplerden birisidir. Bu nesnelere ait objelerin değer değiştirilebilir. En dikkat edilmesi gereken durumlar ise immutable bir objenin döndürülmesidir. Bu durumda, objemiz döndürülen sınıf içerisinde istendiği gibi değiştirilebilir. Örnek vermek gerekirse; bir Person sınıfı yazdığımız düşünelim. Bu sınıf içinde bir kişiye ait isim ve doğum tarihi tutulsun. Şu şekilde kodladığımızı varsayalım:
 
 ```java
