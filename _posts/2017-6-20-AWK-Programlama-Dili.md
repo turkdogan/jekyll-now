@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: AWK Programlama Dili
+title: AWK Programlama Dili!
 ---
 
 Not: 2010 tarihinde daha önce kendi blogumda yazmış olduğum yazıdır.
